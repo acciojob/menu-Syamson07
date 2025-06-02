@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
-import "./styles.css";
 
-// Sample data
-const menuItems = [
+const menuData = [
   {
     id: 1,
     name: "Pancakes",
@@ -49,16 +47,14 @@ const menuItems = [
 ];
 
 function App() {
-  const [items, setItems] = useState(menuItems);
-  const [category, setCategory] = useState("All");
+  const [items, setItems] = useState(menuData);
 
-  const handleFilter = (cat) => {
-    setCategory(cat);
-    if (cat === "All") {
-      setItems(menuItems);
-    } else {
-      setItems(menuItems.filter((item) => item.category === cat));
-    }
+  const handleFilter = (category) => {
+    const filteredItems =
+      category === "All"
+        ? menuData
+        : menuData.filter((item) => item.category === category);
+    setItems(filteredItems);
   };
 
   return (

@@ -1,28 +1,16 @@
-body {
+#main {
+  padding: 20px;
   font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f2f2f2;
-}
-
-.app-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  background: #fff;
   text-align: center;
-  border-radius: 8px;
 }
 
-.button-group {
+.btn-container {
   margin-bottom: 20px;
 }
 
-.button-group button {
-  margin: 0 10px;
+button {
+  margin: 5px;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
   cursor: pointer;
 }
 
@@ -34,20 +22,18 @@ body {
 }
 
 .menu-item {
-  background: #fafafa;
-  padding: 1rem;
-  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
   width: 200px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
 }
 
-.menu-item img {
+.menu-img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-.menu-details h3 {
-  margin: 10px 0 5px;
+.menu-info {
+  margin-top: 10px;
 }
